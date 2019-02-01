@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+/**************************************
+REUSABLE COMPONENTS
+**************************************/
+
+row { max-width: 100% }
+
+section { padding: 80px; }
+
+box { padding: 1%; }
+
+h1 {
+    font-size: 200%;
+    font-weight: 500;
+}
+
+p {
+    font-size: 80%;
+}
