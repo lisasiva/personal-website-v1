@@ -1,3 +1,8 @@
+/* Mint green: #d3eee1 */
+/* Sea foam: #7FA191 */
+/* Royal purple: #663399 */
+
+
 * {
     margin: 0;
     padding: 0;
@@ -11,23 +16,374 @@ html {
     font-weight: 400;
     font-size: 20px;
     text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
 }
 
 /**************************************
 REUSABLE COMPONENTS
 **************************************/
 
-row { max-width: 100% }
+section { padding: 50px 0px; }
 
-section { padding: 80px; }
+h3 {
+    font-weight:500;
+    font-size:200%;
+    margin-bottom: 80px;
+    width: 65%;
+}
 
-box { padding: 1%; }
+/**************************************
+HEADER
+**************************************/
+
+header { padding: 120px 120px 60px 120px; }
 
 h1 {
-    font-size: 200%;
-    font-weight: 500;
+    font-size: 300%;
+    line-height:1.05em;
+    font-weight: 400;
+    width: 75%;
 }
 
-p {
-    font-size: 80%;
+h2 {
+    width: 65%;
+    font-weight:300;
 }
+
+.unicorn-emoji {
+    display:inline-block;
+    transform: scale(-1, 1);
+}
+
+/**************************************
+Navigation
+**************************************/
+
+#main-nav {
+    padding: 30px 120px 0px 120px;
+    display: flex;
+    align-items: center;
+}
+
+.main-nav__logo:link,
+.main-nav__logo:visited {
+    flex: 0 0 55%;
+    font-weight: 400;
+    font-size: 150%;
+    text-decoration: none;
+    color: #555;
+    transition: color 0.5s;
+    margin-top: -12px;
+    margin-bottom:8px;
+}
+
+.main-nav__logo:hover {
+    font-weight: 400;
+    font-size: 150%;
+    color: #7FA191;
+}
+
+.main-nav__link:link,
+.main-nav__link:visited {
+    font-size: 80%;
+    font-weight:300;
+    color: #555;
+    margin: 0px 25px 0px 25px;
+    padding-bottom:8px;
+    border-bottom: 2px solid #fff;
+    transition: border-bottom, 0.3s;
+    text-decoration: none;
+}
+
+.main-nav__link:hover,
+.main-nav__link:active {
+    border-bottom: 2px solid #d3eee1;
+}
+
+
+/* STICKY NAV */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.98);
+    -webkit-box-shadow: 0 2px 2px #efefef;
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;
+}
+
+.sticky .main-nav__link {
+    margin-bottom:8px;
+}
+
+/* MOBILE NAV */
+
+.mobile-nav-icon {
+    display: none;
+    color: #555555;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(255,255,255);
+  background-color: rgba(255,255,255, 0.97);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-links {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a:link,
+.overlay a:visited {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 160%;
+  color: #555555;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:active {
+  color: #7FA191;
+}
+
+.overlay .mobile-close-icon {
+  position: absolute;
+  top: 16px;
+  right: 66px;
+  font-size: 160%;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+
+/**************************************
+PROJECTS
+**************************************/
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    padding-left: 120px;
+}
+
+.project-left,
+.project-right {
+    max-width: 85%;
+    overflow: hidden;
+    border-radius: 4px;
+    box-shadow: 0 30px 80px 10px rgba(0,0,0,0.3);
+
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 80px;
+}
+
+.project__hero {
+    flex: 0 0 50%;
+    overflow: hidden;
+}
+
+.project__img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transform: scale(1.15);
+    transition: transform 0.5s;
+}
+
+.project__img:hover {
+    transform: scale(1.03);
+}
+
+
+.project__content {
+    flex: 1;
+    background: white;
+    padding: 35px 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project__title {
+    display: flex;
+    flex-direction: column;
+    transition: color 0.3s;
+}
+
+.project__link:link,
+.project__link:visited {
+    text-decoration:none;
+    color: #555;
+}
+
+.project__title:hover,
+.project__link:hover,
+.project__link:active {
+    display: flex;
+    flex-direction: column;
+    color: #7FA191;
+}
+
+.project__type {
+    font-size: 50%;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #7FA191;
+    margin-bottom: 10px;
+}
+
+.project__heading {
+    font-size: 150%;
+    font-weight:300;
+    margin-bottom:20px;
+}
+
+.project__description { 
+    font-size: 75%;
+    font-weight: 300;
+    line-height: 140%;    
+}
+
+.challenge { 
+    font-weight: 400;
+    font-size: 85%;
+    text-transform: uppercase;
+}
+
+.project__details {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: auto;
+}
+
+.project__detail {
+    font-size: 65%;
+    text-transform: uppercase;
+    margin-right: 20px;
+    font-weight: 500;
+
+    display: flex;
+    align-items: center;
+}
+
+.emoji {
+  font-size: 20px;
+  margin-right: 3px;
+}
+
+/**************************************
+BYLINES
+**************************************/
+
+#bylines {
+    /*margin-left: 120px;*/
+    /*padding-bottom: 150px;*/
+    max-width: 100%;
+    /*background: #d3eee1;*/
+}
+
+
+.bylines__logos {
+    padding-left: 120px;
+    display: flex;
+    max-width: 90%;
+    overflow: hidden;
+    align-items: center;
+}
+
+.bylines__logo {
+    width: 100%;
+    padding-right: 40px;
+    height: auto;
+    transform: scale(1.03);
+    transition: transform 0.3s;
+}
+
+.bylines__logo:hover {
+    transform: scale(1.15);
+}
+
+
+/**************************************
+CONTACT
+**************************************/
+
+#contact {
+    padding-left: 120px;
+    margin-top: 80px;
+}
+
+.contact-dek { 
+    font-size: 100%;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.contact-email {
+    color:#999;
+    text-decoration:underline;
+    font-weight:300;
+    transition: color 0.5s;
+}
+
+.contact-email:hover {
+    color:#d3eee1;
+}
+
+/**************************************
+FOOTER
+**************************************/
+
+.footer-box {
+    margin-top: 150px;
+    display: flex;
+}
+
+.footer-box__logo {
+    padding-left: 120px;
+    flex: 0 0 75%;
+    font-weight: 400;
+    font-size: 100%;
+    transition: color 0.3s;
+    text-decoration:none;
+    color:#555;
+}
+
+.footer-box__logo:hover {
+    color: #7FA191;
+}
+
+.footer-box__delight {
+    font-weight: 300;
+    font-size: 80%;
+    transition: color 0.5s;
+}
+

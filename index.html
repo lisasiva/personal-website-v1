@@ -10,10 +10,147 @@
     <link href="vendors/css/grid.css" type="text/css" rel="stylesheet">
     <link href="vendors/css/grid.css" type="text/css" rel="stylesheet">
     <link href="resources/css/style.css" rel="stylesheet">
+    <link href="resources/css/queries.css" rel="stylesheet">
     <title>Lisa Siva - Writer, Coder, Design Thinker</title>
 </head>
     
 <body>
+    
+    <!-------------- NAV BAR -------------->
+    
+    <nav id="main-nav" class="js--main-nav">
+        <a href="#header" class="main-nav__logo">lisa.</a>
+        <a href="#projects" class="main-nav__link">builds</a>
+        <a href="#bylines" class="main-nav__link">bylines</a>
+        <a href="about" class="main-nav__link">about</a>
+        <a href="#contact" class="main-nav__link">contact</a>
+        <a href="#" class="mobile-nav-icon"><i class="fas fa-bars"></i></a>
+    </nav>
+    
+    <!-------------- MOBILE NAV OVERLAY -------------->
+    
+    <!-- The overlay -->
+    <div id="mobileNav" class="overlay">
+
+      <!-- Button to close the overlay navigation -->
+      <a href="#" class="mobile-close-icon"><i class="fas fa-times"></i></a>
+    
+      <!-- Overlay content -->
+      <div class="overlay-links">
+        <a href="#projects" onclick="closeNav()">builds</a>
+        <a href="#bylines" onclick="closeNav()">bylines</a>
+        <a href="about">about</a>
+        <a href="#contact" onclick="closeNav()">contact</a>
+      </div>
+
+    </div>
+    
+    <!-------------- HEADER -------------->
+    
+    <header id="header">
+        <h1><span class="unicorn-emoji">🦄</span><br>Hey, I'm Lisa. I write, design, and code.</h1>
+        <h2>Also, I used to live in a Bavarian castle, but that's a story for another day.</h2>
+    </header>
+    
+    
+    <!-------------- PROJECTS -------------->  
+    
+    <section id="projects">
+        
+        <!-- PROJECT 1 -->
+        <figure class="project-right">
+            <div class="project__hero">
+                 <a href="oyama"><img src="resources/img/oyama-mockup-header.png" alt ="World Oyama Karate" class="project__img"></a>
+            </div>
+            <div class="project__content">
+                <div class="project__title">  
+                    <p class="project__type">Write + Design Research + Code</p>
+                    <p class="project__heading"><a href="oyama" class="project__link">World Oyama Karate</a></p>
+                </div>
+            <p class="project__description">
+              <span class="challenge">The Challenge:</span> In the greater Atlanta area, there are 115+ martial arts schools—an overwhelming choice for prospective students. <em>How might we make this karate dojo instantly distinct?</em>
+            </p>
+            <div class="project__details">
+              <p class="project__detail"><span class="emoji">🔍</span>Social listening</p>
+              <p class="project__detail"><span class="emoji">💪</span>HTML, CSS, jQuery</p>
+            </div>
+          </div>
+        </figure>
+        
+        <!-- PROJECT 2 -->
+        <figure class="project-left">
+            <div class="project__content">
+                <div class="project__title">  
+                    <p class="project__type">Design Research + Code</p>
+                    <p class="project__heading"><a href="mindful-couple" class="project__link">Mindful Couple</a></p>
+                </div>
+            <p class="project__description">
+                <span class="challenge">The challenge:</span> In studies, gratitude has been shown to increase relationship resilience. In real life, it's not always easy to practice. <em>How might we encourage a daily habit of gratitude among married people?</em>
+            </p>
+            <div class="project__details">
+              <p class="project__detail"><span class="emoji">🔍</span>User interviews</p>
+              <p class="project__detail"><span class="emoji">💪</span>Node.js + DynamoDB</p>
+            </div>
+          </div>
+            <div class="project__hero">
+                <a href="mindful-couple"><img src="resources/img/mindful-couple-amazon-alexa-skill.png" alt="Mindful Couple Alexa Skill" class="project__img"></a>
+            </div>
+        </figure>
+        
+        <!-- PROJECT 3 -->
+        <figure class="project-right">
+            <div class="project__hero">
+                 <a href="panna"><img src="resources/img/panna-mockup-intro.png" alt ="Panna Cooking Email Campaign" class="project__img"></a>
+            </div>
+            <div class="project__content">
+                <div class="project__title">  
+                    <p class="project__type">Write + Design + Build</p>
+                    <p class="project__heading"><a href="panna" class="project__link">Be a Better Baker</a></p>
+                </div>
+            <p class="project__description">
+                <span class="challenge">The challenge:</span> While at a video recipe startup, I noticed we were sending the same kind of emails week after week. <em>How could we create a new experience to re-engage our subscribers?</em>
+            </p>
+            <div class="project__details">
+              <p class="project__detail"><span class="emoji">🔍</span>Expert interviews</p>
+              <p class="project__detail"><span class="emoji">💪</span>MailChimp, Photoshop</p>
+            </div>
+          </div>
+        </figure>
+        
+    </section>
+    
+    <!-------------- BYLINES -------------->
+    <section id="bylines">
+        <!--<h3 class="bylines-hed">I write about things like food, music, and really good cover letters.</h3>-->
+        <div class="bylines__logos">
+            <a href="https://food52.com/users/215108-lisa-siva/articles" target="_blank" class="link-food52"><img src="resources/img/food52-logo.png" alt="Food52" class="bylines__logo"></a>
+            <a href="https://www.gq.com/story/the-7-healthiest-foods-you-arent-eating-yet" target="_blank" class="link-gq"><img src="resources/img/gq-logo.png" class="bylines__logo" alt="GQ"></a>
+            <a href="https://www.wonderlandmagazine.com/2015/02/03/new-noise-tk-wonder/" target="_blank" class="link-wonderland"><img src="resources/img/wonderland-logo.png" class="bylines__logo" alt="Wonderland Magazine"></a>
+            <a href="https://www.nbforum.com/app/uploads/NBF_SWE_summary_2017.pdf#page=10" target="_blank" class="link-nbf"><img src="resources/img/nordic-business-forum-logo.png" class="bylines__logo" alt="The Nordic Business Forum"></a>
+            <a href="https://www.themuse.com/advice/the-cover-letter-formula-that-skyrocketed-my-interviews-from-0-to-55" target="_blank" class="link-muse"><img src="resources/img/the-muse-logo.png" class="bylines__logo" alt="The Muse"></a>
+        </div>  
+    </section>
+    
+    <!-------------- GET IN TOUCH -------------->
+    <section id="contact">
+        <h3 class="contact-hed">Shall we geek out about startups? Good copy? Doctor Who?</h3>
+        <p class="contact-dek">I weirdly love getting emails.</p>
+        <a href="mailto:lisashantisiva@gmail.com" class="contact-email">lisashantisiva@gmail.com</a>
+    </section>
+    
+    <!-------------- FOOTER -------------->
+    <footer>
+    <div class="footer-box">
+        <a href="#header" class="footer-box__logo">lisa.</a>
+        <span class="footer-box__delight">Have a wonderful day. ✨</span>
+        
+    </div>
+</footer>
+
+    <!-------------- SCRIPTS -------------->
+<script src="resources/js/script.js"></script>    
 </body>
+    
+
     
 </html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="vendors/css/normalize.css" type="text/css" rel="stylesheet">
+    <link href="vendors/css/grid.css" type="text/css" rel="stylesheet">
+    <link href="vendors/css/grid.css" type="text/css" rel="stylesheet">
+    <link href="resources/css/project.css" rel="stylesheet">
+    <title>Mindful Couple - Lisa Siva</title>
+</head>
+    
+<body>
+    
+    <!-------------- NAV BAR -------------->
+    
+    <nav id="main-nav">
+        <a href="index" class="main-nav__logo">lisa.</a>
+        <a href="index#projects" class="main-nav__link">builds</a>
+        <a href="index#bylines" class="main-nav__link">bylines</a>
+        <a href="about" class="main-nav__link">about</a>
+        <a href="index#contact" class="main-nav__link">contact</a>
+        <a href="#" class="mobile-nav-icon"><i class="fas fa-bars"></i></a>
+    </nav>
+    
+    <!-------------- MOBILE NAV OVERLAY -------------->
+    
+    <!-- The overlay -->
+    <div id="mobileNav" class="overlay">
+
+      <!-- Button to close the overlay navigation -->
+      <a href="#" class="mobile-close-icon"><i class="fas fa-times"></i></a>
+    
+      <!-- Overlay content -->
+      <div class="overlay-links">
+        <a href="index#projects" onclick="closeNav()">builds</a>
+        <a href="index#bylines" onclick="closeNav()">bylines</a>
+        <a href="about">about</a>
+        <a href="index#contact" onclick="closeNav()">contact</a>
+      </div>
+
+    </div>
+    
+    <!-------------- HEADER -------------->
+    
+    <header id="header">
+        <p class="superhed">Design Research + Code</p>
+        <h1>Mindful Couple</h1>
+        <h2>In studies, gratitude has been shown to increase relationship resilience. In real life, it's not always easy to practice. <em>How might we encourage a daily habit of gratitude among married people?</em></h2>
+    </header>
+    
+    <!-------------- PROCESS -------------->  
+    
+    <section id="process">
+        
+        <!-- SOLUTION -->
+        <figure class="process-right">
+            <div class="process__hero">
+                 <img src="resources/img/mindful-couple-amazon-alexa-skill.png" alt ="Mindful Couple - Amazon Alexa Skill" class="process__img">
+            </div>
+            <div class="process__content">
+                <div class="process__title">  
+                    <p class="process__type">The Solution</p>
+                    <p class="process__heading">"Alexa, ask Mindful Couple for an idea."</p>
+                </div>
+            <p class="process__description">
+              For this project, I taught myself Javascript in less than 3 weeks. The result? An Alexa skill that gives you fresh new ways to show your partner you appreciate them. 
+            </p>
+            <div class="process__details">
+                <span><a href="https://www.amazon.com/dp/B07KP76WJC/" target="_blank" class="process__link">check it out</a></span>
+                <span><a href="https://www.amazon.com/dp/B07KP76WJC/" target="_blank" class="process__emoji">👉</a></span>
+                <!--<a href="https://lisasiva.github.io/oyama-karate-atlanta/" target="_blank" class="process__emoji">👉</a>-->
+            </div>
+          </div>
+        </figure>
+        
+        <!-- METHOD -->
+        <figure class="process-left">
+            <div class="process__content">
+                <div class="process__title">  
+                    <p class="process__type">Method</p>
+                    <p class="process__heading">User Interviews</p>
+                </div>
+            <p class="process__description">
+              Alongside a thorough literature review, I spoke to 200+ people in different kinds of relationships—married and dating, monogamous and polyamorous—to better understand how we express gratitude. Learnings were downloaded onto Post-It notes. Many of them.
+            </p>
+          </div>
+            <div class="process__hero">
+                 <img src="resources/img/mindful-couple-method-post-its.png" alt="I downloaded learnings from user interviews onto Post-It notes" class="process__img">
+            </div>
+        </figure>
+        
+        <!-- DESIGN PRINCIPLE 1 -->
+        <figure class="process-right">
+            <div class="process__hero">
+                 <img src="resources/img/mindful-couple-principle-love-languages.png" alt="Physical touch is one of 5 Love Languages" class="process__img">
+            </div>
+            <div class="process__content">
+                <div class="process__title">  
+                    <p class="process__type">Design Principle</p>
+                    <p class="process__heading">Embrace all love languages</p>
+                </div>
+            <p class="process__description">
+                When I asked people to recall a time they felt really appreciated, they often remembered a hug, a kiss, or a kind gesture&#8212;not the words, "thank you." Ensuring that Mindful Couple suggested ideas across multiple love languages was an important consideration.
+            </p>
+          </div>
+        </figure>
+        
+        <!-- DESIGN PRINCIPLE 2 -->
+        <figure class="process-left">
+            <div class="process__content">
+                <div class="process__title">  
+                    <p class="process__type">Design Principle</p>
+                    <p class="process__heading">Inspire action</p>
+                </div>
+            <p class="process__description">
+                From research by Nathaniel Lambert &#38; Frank Fincham (2011), we now know that <em>expressing</em> gratitude has an effect on relationship maintenance beyond merely thinking grateful thoughts. With this in mind, I crafted Mindful Couple's suggestions to be specific and doable.
+            </p>
+          </div>
+            <div class="process__hero">
+                 <img src="resources/img/mindful-couple-principle-action.png" alt="Expressing gratitude to someone increases relationship maintenance behaviors" class="process__img">
+            </div>
+        </figure>
+        
+        
+    </section>
+    
+    <!-------------- MORE WORK -------------->
+    <section id="work">
+        <div class="work__links">
+            <p class="work__invite">Have a look at this next:</p>
+            <p><a href="#" target="_blank" class="work__link">Be a Better Baker</a></p>
+        </div>  
+    </section>
+    
+    <!-------------- GET IN TOUCH -------------->
+    <!--<section id="contact">
+        <h3 class="contact-hed">Shall we geek out about startups? Good copy? Doctor Who?</h3>
+        <p class="contact-dek">I weirdly love getting emails.</p>
+        <a href="mailto:lisashantisiva@gmail.com" class="contact-email">lisashantisiva@gmail.com</a>
+    </section>-->
+    
+    <!-------------- FOOTER -------------->
+    <footer>
+    <div class="footer-box">
+        <a href="#header" class="footer-box__logo">lisa.</a>
+        <span class="footer-box__delight">My, look how far you've scrolled! ✨</span>
+        
+    </div>
+</footer>
+
+    <!-------------- SCRIPTS -------------->
+<script src="resources/js/script.js"></script>    
+</body>
+    
+
+    
+</html>

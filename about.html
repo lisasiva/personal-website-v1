@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="vendors/css/normalize.css" type="text/css" rel="stylesheet">
+    <link href="vendors/css/grid.css" type="text/css" rel="stylesheet">
+    <link href="vendors/css/grid.css" type="text/css" rel="stylesheet">
+    <link href="resources/css/about.css" rel="stylesheet">
+    <title>About - Lisa Siva</title>
+</head>
+    
+<body>
+    
+    <!-------------- NAV BAR -------------->
+    
+    <nav id="main-nav">
+        <a href="index" class="main-nav__logo">lisa.</a>
+        <a href="index#projects" class="main-nav__link">builds</a>
+        <a href="index#bylines" class="main-nav__link">bylines</a>
+        <a href="about" class="main-nav__link">about</a>
+        <a href="index#contact" class="main-nav__link">contact</a>
+        <a href="#" class="mobile-nav-icon"><i class="fas fa-bars"></i></a>
+    </nav>
+    
+    <!-------------- MOBILE NAV OVERLAY -------------->
+    
+    <!-- The overlay -->
+    <div id="mobileNav" class="overlay">
+
+      <!-- Button to close the overlay navigation -->
+      <a href="#" class="mobile-close-icon"><i class="fas fa-times"></i></a>
+    
+      <!-- Overlay content -->
+      <div class="overlay-links">
+        <a href="index#projects" onclick="closeNav()">builds</a>
+        <a href="index#bylines" onclick="closeNav()">bylines</a>
+        <a href="about">about</a>
+        <a href="index#contact" onclick="closeNav()">contact</a>
+      </div>
+
+    </div>
+
+    <!-------------- HEADER -------------->
+    
+    <header id="header">
+        <div class="lisa-hero"><img src="resources/img/lisa-siva-frankie-marin.jpg" alt="Lisa Siva photographed by Frankie Marin"></div>
+        <h1>It's lovely to meet you.</h1>
+        <h2>I run a one-woman startup called HeyHon, previously incubated by Flashpoint at Georgia Tech. This is the thing you'll hear me say most often: <span style="color:#7FA191">"I don't know, but I'll figure it out."</span></h2>
+    </header>
+    
+    <!-------------- SUMMARY -------------->
+    
+    <section id="summary">
+        <div class="summary__block">
+            <div class="summary__title">  
+                    <p class="summary__type">Profesionally speaking, </p>
+                    <p class="summary__heading">You could call me a marketer.</p>
+            </div>
+            <p class="summary__description">
+              I write emails that make readers click, landing pages that convert, and stories that show up in search. Previously, I led the editorial team at @Panna, a startup funded by Gary Vaynerchuk.
+            </p>
+        </div>
+        
+        <div class="summary__block">
+            <div class="summary__title">  
+                    <p class="summary__type">In everything I write,</p>
+                    <p class="summary__heading">I believe in meaning, sense, and clarity.</p>
+            </div>
+            <p class="summary__description">
+              Instead of telling you the cookie is perfect, I'd rather show you the crisp, crinkled edges and the satisfying pull of melted chocolate when you break it in two.  
+            </p>
+        </div>
+        
+         <div class="summary__block">
+            <div class="summary__title">  
+                    <p class="summary__type">Personally speaking, </p>
+                    <p class="summary__heading">I'm an unapologetic geek.</p>
+            </div>
+            <p class="summary__description">
+                Things I love: Doctor Who, Neil Gaiman, Charlie Jane Anders, Harry Potter. It feels important to mention that my now-husband and I were engaged on the Hogwarts Express. (The ring was hidden in a chocolate frog box.)  
+            </p>
+        </div>
+    </section>
+    
+    <!-------------- EDUCATION -------------->
+   <section id="education">
+        <div class="education-logos">
+            <div class="education-logo"><img src="resources/img/university-of-texas-austin-logo.png" alt="University of Texas at Austin, graduated May 2013"></div>
+            <div class="education-logo"><img src="resources/img/flashpoint-georgia-tech-logo.png" class="education-logo" alt="Flashpoint @ Georgia Tech, graduated February 2018"></div>
+            <div class="education-logo"><img src="resources/img/startup-school-y-combinator-logo.png" class="education-logo" alt="Startup School, graduated November 2018"></div>
+
+        </div>  
+    </section>
+    
+    
+    <!-------------- FOOTER -------------->
+    <footer>
+    <div class="footer-box">
+        <a href="#header" class="footer-box__logo">lisa.</a>
+        <span class="footer-box__delight">I'm so glad you stopped by. ✨</span>
+        
+    </div>
+</footer>
+
+    <!-------------- SCRIPTS -------------->
+<script src="resources/js/script.js"></script>    
+</body>
+    
+
+    
+</html>
