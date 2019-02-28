@@ -146,39 +146,25 @@ DETAILS
 
 .process__details {
     display: flex;
-    justify-content: flex-end;
     margin-top: auto;
+    justify-content: space-between;
 }
 
-.process__link:link,
-.process__link:visited {
+.process__details a:link,
+.process__details a:visited {
     font-size: 65%;
     text-decoration: none;
     color:#555;
     text-transform: uppercase;
-    margin-right: 10px;
     font-weight: 500;
+    margin-right: 10px;
 
 }
 
-.process__link:active,
-.process__link:hover {
+.process__details a:active,
+.process__details a:hover {
     color: #7FA191;
 }
-
-.process__emoji:link,
-.process__emoji:visited {
-    font-size: 20px;
-    margin-left: 8px;
-    text-decoration: none;
-    transition: margin-left 0.5s;
-}
-
-.process__emoji:hover,
-.process__emoji:active {
-    margin-left: 15px;
-}
-
 
 /**************************************
 MORE WORK
